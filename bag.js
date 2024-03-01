@@ -58,9 +58,7 @@ function loadBagitemsObject() {
             }
         }
     })
-    console.log(bagitemsObject)
 }
-console.log(bagitemsObject)
 function removeFromBag(itemId) {
   bagItems = bagItems.filter(bagItemId => bagItemId != itemId);
   localStorage.setItem('bagItems', JSON.stringify(bagItems));
