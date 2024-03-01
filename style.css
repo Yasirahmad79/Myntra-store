@@ -1,0 +1,323 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+body{
+    font-family: "Assistant",Helvetica,Arial,sans-serif;
+    overflow-x: hidden;
+}
+.nav-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    height: 80px;
+    box-shadow: 0 6px 12px 0 rgba(0,0,0,.05);
+}
+.logo-container{
+    margin-left: 4%;
+}
+.logo-container > a > img{
+    width: 53px;
+    height: 36px;
+}
+.menu-container> ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    
+}
+.menu-container> ul> li > a{
+    font-weight: 700;
+    color: #282c3f;
+    padding: 0 17px 28px;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: .3px;
+}
+.menu-container> ul> li > a:hover{
+    border-bottom:3px solid #ff3f6c;
+}
+.menu-container> ul> li > a > sup{
+    color: #ff3f6c;
+    font-size: 10px;
+}
+.search-container{
+    display: flex;
+    align-items: center;
+}
+.search-container> .search-icon{
+    width: 21px;
+    height: 33px;
+    padding: 6px 0 2px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: content-box;
+    background: #f5f5f6;
+    border: 1px solid #f5f5f6;
+    border-radius: 4px 0 0 4px;
+    cursor: pointer;
+}
+.search-container> .search{
+    height: 25px;
+    min-width: 350px;
+    box-sizing: content-box;
+    padding: 9px 19px 10px;
+    background: #f5f5f6;
+    border-radius: 0 4px 4px 0;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    color: #696e79;
+}
+.action-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.action-container .action-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.action-container> .action-title{
+    color: #000;
+    position: absolute;
+    bottom: 4px;
+    left: 1px;
+    font-size: 12px;
+    font-weight: 700;
+    display: inline-block;
+    padding-top: 10px;
+    line-height: 6px;
+}
+.action-container .action-box{
+    margin: 6px 30px 0 10px;
+    cursor: pointer;
+    box-sizing: content-box;
+}
+.action-container .action-box h4{
+    margin-top: 4px;
+    font-size: 11px;
+    cursor: pointer;
+}
+.action-container .action-box:hover{
+    color: #ff3f6c;
+}
+body > header > nav > div.action-container > a{
+    margin-top: 1rem;
+}
+.bag-items {
+    background-color: #f16565;
+    white-space: nowrap;
+    text-align: center;
+    line-height: 18px;
+    padding: 0 6px;
+    height: 18px;
+    position: relative;
+    border-radius: 50%;
+    font-size: 12px;
+    color: #fff;
+    left: 13px;
+    top: -44px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.banner-container .banner-img{
+    width: 100%;
+    margin: 2rem 0;
+}
+.category-heading h4{
+    color: #3e4152;
+    letter-spacing: .15em;
+    font-size: 1.8em;
+    margin: 50px 0 60px 30px;
+    max-height: 5em;
+    font-weight: 700;
+}
+
+.category-items{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.item-container{
+    width: 250px;
+    margin-top: 1rem;
+}
+.item-container img{
+    width: 100%;
+    height: 311px;
+    cursor: pointer;
+}
+.item-container button{
+    width: 100%;
+    margin: 1rem 0;
+    padding: .5rem;
+    font-size: 1rem;
+    border: none;
+    background-color: #ff3f6c;
+    color: white;
+    border-radius: 5%;
+    cursor: pointer;
+}
+.item-container button:hover{
+    background-color: #d8d8f0;
+    color: #ff3f6c;
+}
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+footer h4{
+    color: #3e4152;
+    letter-spacing: .15em;
+    font-size: 1em;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    max-height: 5em;
+    font-weight: 700;
+}
+footer ul li{
+    list-style: none;
+}
+footer ul li a{
+    margin-left: 50px;
+}
+footer ul li a:hover{
+    color: #ff3f6c;
+}
+.hr-tag{
+    width: 100%;
+    text-align: center;
+    margin: 1rem 0;
+}
+.copyright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1.5rem 0;
+}
+.copyright h5{
+    font-size: 1rem;
+}
+.copyright h5 span{
+    color: #EB008B;
+}
+.menu-icon{
+    cursor: pointer;
+    display: none;
+}
+.sideBar-menu{
+    width: 50%;
+    height: calc(100% - 80px);
+    position: absolute;
+    right: 0%;
+    background-color: #ff3f6c;
+    display: none;
+    transition: all linear ease-in-out 2s ;
+}
+.sideBar-menu ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+.sideBar-menu ul li a{
+    font-weight: 700;
+    color: white;
+}
+.sideBar-menu ul li a sup{
+    color: cyan;
+}
+.sideBar-menu ul li a:hover{
+    border-bottom:3px solid #3e4152;
+}
+.sideBar-menu .action-container{
+    display: flex;
+    justify-content: center;
+    margin-left: .6rem;
+    /* flex-wrap: wrap; */
+    width: 100%;
+    font-size: 1rem;
+    color: white;
+    font-weight: 900;
+}
+.sideBar-menu .action-box:hover{
+    color: #d8d8f0;
+}
+.rating{
+    font-size: 12px;
+    font-weight: 700;
+}
+.company-name{
+    font-weight: 700;
+    margin-top: 1rem;
+}
+.item-name{
+    margin: .3rem 0;
+}
+.current-price{
+    font-weight: 700;
+    padding-right: 3%;
+}
+.original-price{
+    text-decoration: line-through;
+    font-size: 12px;
+    padding-right: 3%;
+}
+.discount{
+    color: rgba(255, 255, 2, 0.986);
+    font-weight: 900;
+}
+@media screen  and (max-width: 1400px) {
+    .menu-container{
+        display: none;
+    }   
+    .menu-icon{
+        display: block;
+    }
+    .logo-container > a > img{
+        width: 45px;
+        height: 28px;
+    }
+    .nav-container .action-box{ 
+        display: none; 
+    }
+    .sideBar-menu ul li a{
+        font-size: 1rem;
+        
+    }
+    .sideBar-menu .action-container .action-box{
+        color: white;
+    }
+}
+
+@media screen  and (max-width: 750px) {
+    .search-container> .search{
+        min-width: 120px;
+    }
+    .menu-icon{
+        display: block;
+    }
+    .logo-container > a > img{
+        width: 40px;
+        height: 23px;
+    }
+    body > div.sideBar-menu > ul > li > a{
+        font-size: 1rem;
+        margin-left: 20%;
+    }
+    .sideBar-menu .action-container{
+        font-size: .6rem;
+    }
+}
